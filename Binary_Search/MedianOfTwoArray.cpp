@@ -22,7 +22,7 @@ double getMed(int a1[], int a2[], int n1, int n2)
 		int max1 = (i1 == 0)?INT_MIN:a1[i1 - 1];
 
 		int min2 = (i2 == n2)?INT_MAX:a2[i2];
-		int max2 = (i1 == 0)?INT_MIN:a1[i2 - 1];
+		int max2 = (i2 == 0)?INT_MIN:a1[i2 - 1];
 
 		if(max1 <= min2 && max2 <= min1)
 		{
